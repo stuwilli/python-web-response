@@ -30,3 +30,7 @@ def test_serializer_ignore_none():
 
     assert tc.serialize(ignore_none=True) == {"val_x": "string_1", "val_y": True, "val_z": 2,
                                               "val_object": {"val_a": "string_1", "val_b": True}}
+
+
+def test_serializer_to_camel_case():
+    assert Serializer.to_camel_case("this_should_be_camel_case") == "thisShouldBeCamelCase"

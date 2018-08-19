@@ -15,3 +15,8 @@ class Serializer:
                     d[attr] = val
 
         return d
+
+    @staticmethod
+    def to_camel_case(snake_case: str):
+        parts = snake_case.split("_")
+        return parts[0] + "".join(x.title() for x in parts[1:])
