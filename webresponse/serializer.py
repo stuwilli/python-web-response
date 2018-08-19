@@ -11,10 +11,9 @@ class Serializer:
                     continue
                 try:
                     d[attr] = getattr(self, attr).serialize(ignore_none=ignore_none)
-                # except TypeError:
-                #     d[attr] = getattr(self, attr).serialize()
+                except TypeError:
+                    d[attr] = getattr(self, attr).serialize()
                 except AttributeError:
                     d[attr] = getattr(self, attr)
 
         return d
-
