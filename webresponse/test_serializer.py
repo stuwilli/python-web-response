@@ -10,13 +10,10 @@ def fixtures():
             self.val_none = None
             self.val_object = TestClass2(x, y)
 
-    class TestClass2:
+    class TestClass2(Serializer):
         def __init__(self, a, b):
             self.val_a = a
             self.val_b = b
-
-        def serialize(self):
-            return {"val_a": self.val_a, "val_b": self.val_b}
 
     return TestClass("string_1", True, 2)
 
