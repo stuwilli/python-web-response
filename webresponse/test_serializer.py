@@ -34,3 +34,10 @@ def test_serializer_ignore_none():
 
 def test_serializer_to_camel_case():
     assert Serializer.to_camel_case("this_should_be_camel_case") == "thisShouldBeCamelCase"
+
+
+def test_serializer_camel_case():
+    tc = fixtures()
+
+    assert tc.serialize(ignore_none=True, camel_case=True) == {"valX": "string_1", "valY": True, "valZ": 2,
+                                                               "valObject": {"valA": "string_1", "valB": True}}
