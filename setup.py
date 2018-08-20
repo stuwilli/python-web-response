@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='python-web-response',
-    version='0.01',
+    version='0.1',
     packages=['venv.lib.python3.7.site-packages.py', 'venv.lib.python3.7.site-packages.py._io',
               'venv.lib.python3.7.site-packages.py._log', 'venv.lib.python3.7.site-packages.py._code',
               'venv.lib.python3.7.site-packages.py._path', 'venv.lib.python3.7.site-packages.py._process',
@@ -49,9 +49,9 @@ setup(
               'venv.lib.python3.7.site-packages.coverage', 'venv.lib.python3.7.site-packages.atomicwrites',
               'venv.lib.python3.7.site-packages.more_itertools',
               'venv.lib.python3.7.site-packages.more_itertools.tests', 'webresponse'],
-    url='https://github.com/stuwilli/python-web-response',
+    url='',
     license='',
     author='stuart',
-    author_email='stu.r.williams@gmail.com',
+    author_email='',
     description=''
 )
