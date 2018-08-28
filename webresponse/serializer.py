@@ -23,6 +23,3 @@ class Serializer:
         parts = snake_case.split("_")
         return parts[0] + "".join(x.title() for x in parts[1:])
 
-    @staticmethod
-    def serialize_list(l):
-        return [m.serialize() for m in l]
